@@ -1,2 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
+/request-handle-lambda/request-handle-lambda.iml
+/request-handle-lambda/target/
+request-handle-lambda/request-handle-lambda.iml
+request-handle-lambda/target/
+/terraform/terraform.tfstate
+/terraform/.terraform/
+/terraform/terraform.tfstate.backup
