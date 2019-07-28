@@ -53,6 +53,11 @@ resource "aws_iam_policy" "state_machine_policy" {
             "lambda:InvokeFunction"
         ],
         "Resource": "${aws_lambda_function.request_handle_lambda.arn}"
+    },
+    {
+      "Effect":"Allow",
+      "Action":"sqs:SendMessage",
+      "Resource":"${aws_sqs_queue.request-handle-queue.arn}"
     }
   ]
 }
